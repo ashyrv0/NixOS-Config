@@ -1,0 +1,10 @@
+-- AUTOSTART
+hl.on("hyprland.start", function()
+  hl.exec_cmd("awww-daemon")
+  hl.exec_cmd("sleep 1 && wal -R && awww img $(cat ~/.cache/wal/wal) --transition-type fade")
+  hl.exec_cmd("hypridle")
+  hl.exec_cmd("~/.config/hypr/autostart.sh")
+  hl.exec_cmd("dunst")
+  hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+  hl.exec_cmd("systemctl --user start xdg-desktop-portal")
+end)

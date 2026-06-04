@@ -1,0 +1,6 @@
+singleton Theme 1.0 Theme.qml
+Clock 1.0 Clock.qml
+MusicPlayer 1.0 MusicPlayer.qml
+SystemStats 1.0 SystemStats.qml
+Workspaces 1.0 Workspaces.qml
+Calendar 1.0 Calendar.qml
