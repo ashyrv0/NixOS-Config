@@ -17,7 +17,7 @@
 - Launcher: rofi
 - Colors: matugen generated from wallpaper
 - Font: JetBrains Mono Nerd Font
-- 
+  
 ## Keybinds
 | Key | Action |
 |---|---|
