@@ -1,7 +1,12 @@
 { pkgs, ... }:
 {
   programs.fastfetch.enable = true;
+
   programs.fastfetch.settings = {
+    logo = {
+      width = 20;
+    };
+
     modules = [
       "title"
       "separator"

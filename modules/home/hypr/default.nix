@@ -1,7 +1,4 @@
-{ config, pkgs, ... }:
-{
-  xdg.configFile."hypr" = {
-    source = ./hypr;
-    recursive = true;
-  };
+{ config, pkgs, lib, ... }:
+{ 
+  xdg.configFile."hypr".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/modules/home/hypr/";
 }

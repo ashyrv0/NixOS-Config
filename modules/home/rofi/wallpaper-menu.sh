@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export PATH="/run/current-system/sw/bin:/home/yurxi/.nix-profile/bin:$PATH"
+
 WALL_DIR="$HOME/.config/hypr/wallpapers"
 THEME="$HOME/.config/rofi/wallpaper.rasi"
 
@@ -14,11 +18,7 @@ done | rofi -dmenu -show-icons -theme "$THEME" -p "Wallpaper" -i)
 
 SELECTED_WALL="$WALL_DIR/$choice"
 
-# Generate wal colors
-wal -i "$SELECTED_WALL" -n -q
-
-# Set wallpaper
-swww img "$SELECTED_WALL" --transition-type grow --transition-fps 60
-
-# Reload Hyprland
+matugen image "$SELECTED_WALL" -m dark --source-color-index 0
+awww img "$SELECTED_WALL" --transition-type wave --transition-angle 30 --transition-wave "60,30" --transition-step 90 --transition-fps 60
 hyprctl reload
+sleep 0.5

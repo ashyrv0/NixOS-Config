@@ -1,3 +1,4 @@
+
 { config, pkgs, inputs, ... }:
 let
   system = pkgs.stdenv.hostPlatform.system;
@@ -21,16 +22,17 @@ in
       fd
       jq
       tree-sitter
+      pam
 
       # Networking and security
       proton-vpn
       librewolf
-      brave
 
       # Media tools
       vlc
       yt-dlp
       playerctl
+      obsidian
 
       # Wayland and Hyprland ecosystem
       hyprlock
@@ -48,7 +50,7 @@ in
       btop
 
       # Development stack
-      vscode
+      vscodium
       rustc
       cargo
       nodejs
@@ -67,6 +69,7 @@ in
       papirus-icon-theme
       nordic
       pywal16
+      matugen
       
       # fun tools
       fastfetch

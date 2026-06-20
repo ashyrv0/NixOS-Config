@@ -1,7 +1,0 @@
-[font]
-size = 12
-
-builtin_box_drawing = true
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"

@@ -25,5 +25,9 @@ in
       hidePodcasts
       adblock
     ];
+
+    enabledCustomApps = with spicePkgs.apps; [
+      marketplace
+    ];
   };
 }

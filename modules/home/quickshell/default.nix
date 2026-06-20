@@ -1,9 +1,5 @@
-{ config, pkgs, ... }:
-{
-  home.packages = [ pkgs.rofi ];
+{ config, pkgs, lib, ... }:
 
-  xdg.configFile."quickshell" = {
-    source = ./quickshell;
-    recursive = true;
-  };
+{ 
+  xdg.configFile."quickshell".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/modules/home/quickshell";
 }

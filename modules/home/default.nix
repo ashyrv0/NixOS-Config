@@ -6,16 +6,18 @@ let
 in
 {
   imports = [
-    ./btop.nix
-    ./cava.nix
-    ./fastfetch.nix
-    ./nvim.nix
-    ./spicetify/spicetify.nix
-    ./alacritty/alacritty.nix
-    ./fish/config.nix
-    ./rofi/default.nix
-    ./quickshell/default.nix
     ./hypr/default.nix
+    ./quickshell/default.nix
+    ./alacritty/default.nix
+    ./fish/default.nix
+    ./btop.nix
+    ./cava/default.nix
+    ./spicetify/spicetify.nix
+    ./matugen/default.nix
+    ./rofi/default.nix
+    ./nvim/default.nix
+    ./fastfetch.nix
+    ./yazi.nix
   ];
 
   home.username = vars.username;

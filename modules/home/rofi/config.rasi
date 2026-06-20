@@ -1,5 +1,6 @@
-/* @import "colors.rasi" */
-@theme "~/.cache/wal/colors-rofi-dark.rasi"
+@import "colors.rasi"
+/* @theme "~/.cache/matugen/colors-rofi-dark.rasi"  */
+
 
 /*****----- Configuration -----*****/
 configuration {
@@ -7,6 +8,7 @@ configuration {
     show-icons:                 true;
     display-drun:               "";
     drun-display-format:        "{name}";
+    font: "JetBrains Mono Nerd Font 12";
 }
 
 /*****----- Main Window -----*****/
