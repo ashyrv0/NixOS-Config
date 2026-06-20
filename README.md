@@ -22,12 +22,12 @@
 | Key | Action |
 |---|---|
 | `Super` + `T` | terminal |
-| `Super` + E       | Open file manager |
-| `Super` + W       | Open librewolf (browser)|
-| `Super` + Super_L| Open app launcher |
-| `Super` + C | Close window        |
-| `Super` + L | Lock screen         |
-| `Super` + S | Screenshot selection |
+| `Super` + `E`       | Open file manager |
+| `Super` + `W`       | Open librewolf (browser)|
+| `Super` + `Super_L` (Spacebar)| Open app launcher |
+| `Super` + `C` | Close window        |
+| `Super` + `L` | Lock screen         |
+| `Super` + `S` | Screenshot selection |
 | `Super` + ` | Wallpaper menu       |
 ## Notes
 
