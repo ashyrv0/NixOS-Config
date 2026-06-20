@@ -1,9 +1,10 @@
 <div align="center">
-# NixOS-Config
-  
-** A repo that contains my personal NixOS configuration. **
 
-[!Desktop](assets/Desktop.png)
+# NixOS-Config
+
+**A repo that contains my personal NixOS configuration.**
+![Desktop](assets/Desktop.png)
+
 </div>
 
 # Overview
